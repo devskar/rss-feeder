@@ -1,0 +1,10 @@
+<feed xmlns="feed">
+    <link>https://xkcd.com/rss.xml</link>
+    <item>
+        <title>{{ title }}</title>
+        <description>{{ description }}</description>
+        <pubDate>{{ pubDate }}</pubDate>
+        <guid>{{ guid }}</guid>
+        <link>{{ link }}</link>
+    </item>
+</feed>

@@ -1,0 +1,11 @@
+<feed xmlns="feed">
+  <link>https://darknetdiaries.com/feedfree.xml</link>
+  <item>
+    <title>{{ title }}</title>
+    <description>{{ description }}</description>
+    <pubDate>{{ pubDate }}</pubDate>
+    <guid isPermaLink="{{ guid.isPermaLink }}">{{ guid }}</guid>
+    <link>{{ link }}</link>
+    <image>{{ itunes:image.href }}</image>
+  </item>
+</feed>
