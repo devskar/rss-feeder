@@ -27,6 +27,9 @@ fn parse_dir_to_feeds(dir: &str) -> Result<Vec<Feed>, std::io::Error> {
     let mut it = fs::read_dir(dir)?.into_iter();
     while let Some(file) = it.next() {
         let file = file?;
+        if file.path().extension().unwrap().to_string_lossy() != "xml" {
+            continue;
+        }
         let content = read_file(file.path()).unwrap();
         feeds.push(xml_to_feed(content).unwrap());
     }
